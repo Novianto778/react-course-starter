@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-red-color: #c06262;
+}
+
+.main-red-color {
+  color: var(--main-red-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -28,4 +36,27 @@ body {
 .frame {
   border: 1px solid #484848;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-title {
+  text-align: center;
+  flex: 1;
+  font-size: 3.6rem;
+  text-transform: lowercase;
+  padding: 20px 0;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  padding: 24px;
+  background: unset;
+  border: unset;
+  outline: unset;
 }
